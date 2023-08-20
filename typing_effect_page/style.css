@@ -19,6 +19,18 @@ body{
     font-size:10rem;
 }
 
+#icon {
+    display: inline-block;
+    font-size: 10rem; /* 아이콘 크기 조절 */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#icon.active {
+    transform: rotateY(180deg);
+}
+
+
 .lg-text{ 
     font-size:2rem;
     font-weight:bold;
@@ -49,3 +61,7 @@ body{
 #dynamic.active::after{
     display: none;
 }
+
+/* style.css */
+/* ... (기존 스타일 유지) ... */
+
