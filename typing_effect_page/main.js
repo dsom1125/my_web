@@ -1,6 +1,7 @@
-//main.js
-let target=document.querySelector("#dynamic");
-function blink(){
-    target.classList.toggle("active");
-}
-setInterval(blink, 500); //blink함수를 0.5초에 한번씩 호출
+// main.js
+document.addEventListener("DOMContentLoaded", () => {
+    const icon = document.getElementById("icon");
+    icon.addEventListener("click", () => {
+        icon.classList.toggle("active");
+    });
+});
